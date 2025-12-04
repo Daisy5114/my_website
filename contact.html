@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系反馈 - 葬送的芙莉莲动漫介绍网站</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <span class="logo-text">葬送的</span>
+                    <span class="logo-highlight">芙莉莲</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">首页</a></li>
+                    <li class="nav-item"><a href="characters.html" class="nav-link">角色介绍</a></li>
+                    <li class="nav-item"><a href="gallery.html" class="nav-link">图集欣赏</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link active">联系反馈</a></li>
+                </ul>
+                <button class="menu-toggle" aria-label="菜单">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 页面标题区域 -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-title">
+                <h1>联系反馈</h1>
+                <p>Resize the browser window to see the effect.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系反馈主内容 -->
+    <main class="contact-main">
+        <div class="container">
+            <div class="contact-section">
+                <div class="contact-info">
+                    <h2>联系我们</h2>
+                    <p class="contact-subtitle">Swing by for a cup of coffee, or leave us a message:</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon"></div>
+                            <div class="contact-text">
+                                <h3>地址</h3>
+                                <p>动漫幻想街 123号</p>
+                                <p>东京都，日本</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon"></div>
+                            <div class="contact-text">
+                                <h3>电话</h3>
+                                <p>+81 3-1234-5678</p>
+                                <p>周一至周五: 9:00-18:00</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon"></div>
+                            <div class="contact-text">
+                                <h3>邮箱</h3>
+                                <p>contact@frieren-anime.com</p>
+                                <p>feedback@frieren-anime.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-image">
+                        <img src="../images/img39.jpg" alt="动漫场景">
+                        <div class="image-caption">《葬送的芙莉莲》动画场景</div>
+                    </div>
+                    
+                    <div class="opening-hours">
+                        <h3>开放时间</h3>
+                        <div class="hours-grid">
+                            <div class="day-time">
+                                <span class="day">周一至周五</span>
+                                <span class="time">9:00 - 18:00</span>
+                            </div>
+                            <div class="day-time">
+                                <span class="day">周六</span>
+                                <span class="time">10:00 - 16:00</span>
+                            </div>
+                            <div class="day-time">
+                                <span class="day">周日</span>
+                                <span class="time">休息</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <h2>发送消息</h2>
+                    <p class="form-subtitle">填写以下表单，我们会尽快回复您</p>
+                    
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">
+                                    <strong>First Name</strong>
+                                </label>
+                                <input 
+                                    type="text" 
+                                    id="firstName" 
+                                    name="firstName" 
+                                    placeholder="Your name.."
+                                    required
+                                >
+                                <div class="form-hint">请输入您的名字</div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="lastName">
+                                    <strong>Last Name</strong>
+                                </label>
+                                <input 
+                                    type="text" 
+                                    id="lastName" 
+                                    name="lastName" 
+                                    placeholder="Your last name.."
+                                    required
+                                >
+                                <div class="form-hint">请输入您的姓氏</div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">
+                                <strong>Email Address</strong>
+                            </label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                placeholder="Your email address.."
+                                required
+                            >
+                            <div class="form-hint">请输入有效的邮箱地址</div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="country">
+                                <strong>Country</strong>
+                            </label>
+                            <select id="country" name="country" required>
+                                <option value="" disabled selected>选择您的国家/地区</option>
+                                <option value="china">中国</option>
+                                <option value="japan">日本</option>
+                                <option value="usa">美国</option>
+                                <option value="uk">英国</option>
+                                <option value="australia">澳大利亚</option>
+                                <option value="canada">加拿大</option>
+                                <option value="germany">德国</option>
+                                <option value="france">法国</option>
+                                <option value="south-korea">韩国</option>
+                                <option value="other">其他</option>
+                            </select>
+                            <div class="form-hint">请选择您所在的国家</div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">
+                                <strong>Subject</strong>
+                            </label>
+                            <textarea 
+                                id="subject" 
+                                name="subject" 
+                                placeholder="Write something.."
+                                rows="6"
+                                required
+                            ></textarea>
+                            <div class="form-hint">请输入您的留言内容（最少10个字符）</div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="messageType">
+                                <strong>反馈类型</strong>
+                            </label>
+                            <div class="radio-group">
+                                <label class="radio-option">
+                                    <input type="radio" name="messageType" value="feedback" checked>
+                                    <span class="radio-label">网站反馈</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="messageType" value="question">
+                                    <span class="radio-label">问题咨询</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="messageType" value="suggestion">
+                                    <span class="radio-label">改进建议</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="messageType" value="other">
+                                    <span class="radio-label">其他</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="checkbox-option">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span class="checkbox-label">订阅我们的动漫资讯 newsletter</span>
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            <span class="btn-text">Submit</span>
+                            <span class="btn-icon"></span>
+                        </button>
+                        
+                        <div class="form-notice">
+                            <p>提交后，我们会在1-3个工作日内回复您。紧急问题请直接致电。</p>
+                        </div>
+                    </form>
+                    
+                    <div class="form-success" id="successMessage" style="display: none;">
+                        <div class="success-icon"></div>
+                        <h3>消息发送成功！</h3>
+                        <p>感谢您的反馈，我们已经收到您的消息，会尽快处理并回复。</p>
+                        <button class="back-btn" onclick="resetForm()">发送新消息</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 地图部分 -->
+            <div class="map-section">
+                <h2>我们的位置</h2>
+                <div class="map-container">
+                    <div class="map-placeholder">
+                        <div class="map-overlay">
+                            <h3>动漫幻想街 123号</h3>
+                            <p>东京都，日本</p>
+                            <div class="map-legend">
+                                <div class="legend-item">
+                                    <span class="legend-color" style="background-color: #3498db;"></span>
+                                    <span>最近地铁站: 动漫站 (300m)</span>
+                                </div>
+                                <div class="legend-item">
+                                    <span class="legend-color" style="background-color: #9b59b6;"></span>
+                                    <span>公交车站: 幻想街站 (150m)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- FAQ部分 -->
+            <div class="faq-section">
+                <h2>常见问题</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span class="faq-icon">提问</span>
+                            <h3>网站内容会定期更新吗？</h3>
+                        </div>
+                        <div class="faq-answer">
+                            <p>是的，我们会定期更新动漫资讯、角色信息和图集内容。网站内容每月至少更新一次，重大新闻会及时发布。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span class="faq-icon">提问</span>
+                            <h3>可以投稿动漫相关内容吗？</h3>
+                        </div>
+                        <div class="faq-answer">
+                            <p>欢迎投稿！请通过本页面的表单提交您的内容，我们会认真审核。采用的内容会注明投稿者信息。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span class="faq-icon">提问</span>
+                            <h3>反馈多久能得到回复？</h3>
+                        </div>
+                        <div class="faq-answer">
+                            <p>我们会在1-3个工作日内回复所有有效反馈。紧急问题建议直接致电联系。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span class="faq-icon">提问</span>
+                            <h3>这个网站是官方的吗？</h3>
+                        </div>
+                        <div class="faq-answer">
+                            <p>本网站是粉丝制作的《葬送的芙莉莲》介绍网站，是本人毕业设计项目，并非官方网站。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>关于本站</h3>
+                    <p>本网站为《葬送的芙莉莲》动漫介绍专题站，是本人毕业设计项目，旨在展示前端开发技能。</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>快速链接</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="characters.html">角色介绍</a></li>
+                        <li><a href="gallery.html">图集欣赏</a></li>
+                        <li><a href="contact.html">联系反馈</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>毕业设计信息</h3>
+                    <p><strong>项目：</strong>动漫介绍网站设计与实现</p>
+                    <p><strong>学生：</strong>喻德霞</p>
+                    <p><strong>专业：</strong>计算机网络技术</p>
+                    <p><strong>指导老师：</strong>张坤</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 葬送的芙莉莲动漫介绍网站 - 专科毕业设计</p>
+                <p class="disclaimer">注：本网站为学习交流用途，不用于商业目的</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript文件 -->
+    <script src="../js/main.js"></script>
+    <script src="../js/contact.js"></script>
+</body>
+</html>

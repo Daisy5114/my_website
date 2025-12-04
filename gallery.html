@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图集欣赏 - 葬送的芙莉莲动漫介绍网站</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/gallery.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <span class="logo-text">葬送的</span>
+                    <span class="logo-highlight">芙莉莲</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">首页</a></li>
+                    <li class="nav-item"><a href="characters.html" class="nav-link">角色介绍</a></li>
+                    <li class="nav-item"><a href="gallery.html" class="nav-link active">图集欣赏</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">联系反馈</a></li>
+                </ul>
+                <button class="menu-toggle" aria-label="菜单">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 页面标题区域 -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-title">
+                <h1>图集欣赏</h1>
+                <p>欣赏《葬送的芙莉莲》精美图片，点击图片查看大图</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 图集主内容 -->
+    <main class="gallery-main">
+        <div class="container">
+            <!-- 分类筛选 -->
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">全部</button>
+                <button class="filter-btn" data-filter="character">角色</button>
+                <button class="filter-btn" data-filter="scene">场景</button>
+                <button class="filter-btn" data-filter="artwork">同人作品</button>
+                <button class="filter-btn" data-filter="screenshot">动画截图</button>
+            </div>
+            
+            <!-- 图片搜索 -->
+            <div class="gallery-search">
+                <input type="text" id="searchInput" placeholder="搜索图片...">
+                <button id="searchBtn">搜索</button>
+                <div class="search-info">
+                    <span id="imageCount">共 12 张图片</span>
+                </div>
+            </div>
+            
+            <!-- 幻灯片画廊 -->
+            <div class="gallery-container">
+                <!-- 图集图片 1 -->
+                <div class="gallery-item" data-category="character" data-tags="芙莉莲 精灵 魔法使">
+                    <div class="gallery-image">
+                        <img src="../images/img23.jpg" 
+                             alt="芙莉莲 - 精灵魔法使"
+                             data-fullsize="../images/img23.jpg"
+                             loading="lazy">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <h3>芙莉莲</h3>
+                                <p>精灵魔法使</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-info">
+                        <div class="image-title">精灵魔法使芙莉莲</div>
+                        <div class="image-desc">拥有千年寿命的精灵，在重新认识人类情感的过程中成长</div>
+                        <div class="image-meta">
+                            <span class="image-category">角色</span>
+                            <span class="image-date">2025-12</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 图集图片 2 -->
+                <div class="gallery-item" data-category="scene" data-tags="旅程 冒险 风景">
+                    <div class="gallery-image">
+                        <img src="../images/img16.jpg" 
+                             alt="冒险旅程"
+                             data-fullsize="../images/img16.jpg"
+                             loading="lazy">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <h3>冒险旅程</h3>
+                                <p>重新开始的旅途</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-info">
+                        <div class="image-title">重新开始的旅程</div>
+                        <div class="image-desc">芙莉莲与菲伦一起踏上收集魔法、重新认识人类的旅程</div>
+                        <div class="image-meta">
+                            <span class="image-category">场景</span>
+                            <span class="image-date">2025-12</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 图集图片 3 -->
+                <div class="gallery-item" data-category="character" data-tags="辛美尔 勇者 英雄">
+                    <div class="gallery-image">
+                        <img src="../images/img27.jpg" 
+                             alt="勇者辛美尔"
+                             data-fullsize="../images/img27.jpg"
+                             loading="lazy">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <h3>辛美尔</h3>
+                                <p>勇者</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-info">
+                        <div class="image-title">勇者辛美尔</div>
+                        <div class="image-desc">打倒魔王的英雄，对芙莉莲有着特殊情感的勇者</div>
+                        <div class="image-meta">
+                            <span class="image-category">角色</span>
+                            <span class="image-date">2025-12</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 图集图片 4 -->
+                <div class="gallery-item" data-category="artwork" data-tags="同人 绘画 艺术">
+                    <div class="gallery-image">
+                        <img src="../images/img37.jpg" 
+                             alt="同人艺术作品"
+                             data-fullsize="../images/img37.jpg"
+                             loading="lazy">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <h3>同人作品</h3>
+                                <p>粉丝创作:Nos_fri</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-info">
+                        <div class="image-title">粉丝同人作品</div>
+                        <div class="image-desc">粉丝创作的芙莉莲插画，展现了不同的艺术风格</div>
+                        <div class="image-meta">
+                            <span class="image-category">同人作品</span>
+                            <span class="image-date">2025-11</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 图集图片 5 -->
+                <div class="gallery-item" data-category="screenshot" data-tags="动画 截图 官方">
+                    <div class="gallery-image">
+                        <img src="../images/img29.jpg" 
+                             alt="动画截图"
+                             data-fullsize="../images/img29.jpg"
+                             loading="lazy">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <h3>动画截图</h3>
+                                <p>官方动画</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-info">
+                        <div class="image-title">动画精彩截图</div>
+                        <div class="image-desc">动画中的经典场景截图，展现了精美的画面质量</div>
+                        <div class="image-meta">
+                            <span class="image-category">动画截图</span>
+                            <span class="image-date">2025-12</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 图集图片 6 -->
+                <div class="gallery-item" data-category="character" data-tags="菲伦 学徒 魔法">
+                    <div class="gallery-image">
+                        <img src="../images/img44.jpg" 
+                             alt="菲伦 - 魔法使学徒"
+                             data-fullsize="../images/img44.jpg"
+                             loading="lazy">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <h3>菲伦</h3>
+                                <p>魔法使学徒</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-info">
+                        <div class="image-title">魔法使学徒菲伦</div>
+                        <div class="image-desc">海塔收养的女孩，跟随芙莉莲学习魔法并不断成长</div>
+                        <div class="image-meta">
+                            <span class="image-category">角色</span>
+                            <span class="image-date">2025-12</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 图集图片 7 -->
+                <div class="gallery-item" data-category="scene" data-tags="回忆 过去 旅程">
+                    <div class="gallery-image">
+                        <img src="../images/img47.jpg" 
+                             alt="回忆场景"
+                             data-fullsize="../images/img47.jpg"
+                             loading="lazy">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <h3>回忆</h3>
+                                <p>过去的旅程</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-info">
+                        <div class="image-title">回忆中的旅程</div>
+                        <div class="image-desc">芙莉莲回忆与勇者队伍一起冒险的时光</div>
+                        <div class="image-meta">
+                            <span class="image-category">场景</span>
+                            <span class="image-date">2025-12</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 图集图片 8 -->
+                <div class="gallery-item" data-category="artwork" data-tags="插画 设计 创意">
+                    <div class="gallery-image">
+                        <img src="../images/img40.jpg" 
+                             alt="创意插画"
+                             data-fullsize="../images/img40.jpg"
+                             loading="lazy">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <h3>创意插画</h3>
+                                <p>艺术设计</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-info">
+                        <div class="image-title">创意艺术插画</div>
+                        <div class="image-desc">艺术家创作的《葬送的芙莉莲》主题插画作品</div>
+                        <div class="image-meta">
+                            <span class="image-category">同人作品</span>
+                            <span class="image-date">2023-11</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 分页控制 -->
+            <div class="gallery-pagination">
+                <button class="page-btn prev-btn" disabled>上一页</button>
+                <div class="page-numbers">
+                    <span class="page-number active">1</span>
+                    <span class="page-number">2</span>
+                    <span class="page-number">3</span>
+                </div>
+                <button class="page-btn next-btn">下一页</button>
+            </div>
+            
+            <!-- 图片查看器（模态框） -->
+            <div class="lightbox-modal" id="lightboxModal">
+                <div class="lightbox-content">
+                    <button class="lightbox-close" id="lightboxClose">&times;</button>
+                    <button class="lightbox-nav prev" id="lightboxPrev">&lt;</button>
+                    <button class="lightbox-nav next" id="lightboxNext">&gt;</button>
+                    
+                    <div class="lightbox-image-container">
+                        <img id="lightboxImage" src="" alt="">
+                        <div class="lightbox-loader">加载中...</div>
+                    </div>
+                    
+                    <div class="lightbox-info">
+                        <h2 id="lightboxTitle"></h2>
+                        <p id="lightboxDescription"></p>
+                        <div class="lightbox-meta">
+                            <span id="lightboxCategory"></span>
+                            <span id="lightboxDate"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 下载提示 -->
+            <div class="download-notice">
+                <p>提示：点击图片可查看大图，右键图片可选择保存。所有图片仅供个人欣赏使用。</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>关于本站</h3>
+                    <p>本网站为《葬送的芙莉莲》动漫介绍专题站，是本人毕业设计项目，旨在展示前端开发技能。</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>快速链接</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="characters.html">角色介绍</a></li>
+                        <li><a href="gallery.html">图集欣赏</a></li>
+                        <li><a href="contact.html">联系反馈</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>毕业设计信息</h3>
+                    <p><strong>项目：</strong>动漫介绍网站设计与实现</p>
+                    <p><strong>学生：</strong>喻德霞</p>
+                    <p><strong>专业：</strong>计算机网络技术</p>
+                    <p><strong>指导老师：</strong>张坤</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 葬送的芙莉莲动漫介绍网站 - 专科毕业设计</p>
+                <p class="disclaimer">注：本网站为学习交流用途，不用于商业目的。图片来源于网络。</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript文件 -->
+    <script src="../js/main.js"></script>
+    <script src="../js/gallery.js"></script>
+</body>
+</html>

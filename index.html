@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>葬送的芙莉莲 - 动漫介绍网站 | 毕业设计</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/slideshow.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <span class="logo-text">葬送的</span>
+                    <span class="logo-highlight">芙莉莲</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link active">首页</a></li>
+                    <li class="nav-item"><a href="characters.html" class="nav-link">角色介绍</a></li>
+                    <li class="nav-item"><a href="gallery.html" class="nav-link">图集欣赏</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">联系反馈</a></li>
+                </ul>
+                <button class="menu-toggle" aria-label="菜单">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 幻灯片区域 -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="section-title">
+                <h1>葬送的芙莉莲</h1>
+                <p>一段关于时间、记忆与情感的千年旅程</p>
+            </div>
+            
+            <div class="slideshow-container" id="slideshowContainer">
+                <!-- 幻灯片1 -->
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="../images/img9.jpg" alt="芙莉莲与辛美尔">
+                    <div class="text">勇者一行人的旅程 - 精灵魔法使芙莉莲与勇者辛美尔、僧侣海塔、战士艾泽</div>
+                </div>
+                
+                <!-- 幻灯片2 -->
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="../images/img17.jpg" alt="芙莉莲的回忆">
+                    <div class="text">千年之后的回望 - 芙莉莲开始重新理解与同伴们度过的十年时光</div>
+                </div>
+                
+                <!-- 幻灯片3 -->
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="../images/img12.jpg" alt="新的旅程">
+                    <div class="text">新的开始 - 与菲伦一起踏上收集魔法、重新认识人类的旅程</div>
+                </div>
+                
+                <!-- 导航按钮 -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            
+            <!-- 指示点 -->
+            <div class="dots-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 动漫简介 -->
+    <section class="intro-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>作品简介</h2>
+                <p>关于《葬送的芙莉莲》的详细介绍</p>
+            </div>
+            
+            <div class="intro-content">
+                <div class="intro-image">
+                    <img src="../images/img10.jpg" alt="葬送的芙莉莲">
+                    <div class="image-caption">精灵魔法使芙莉莲</div>
+                </div>
+                
+                <div class="intro-text">
+                    <h3>故事背景</h3>
+                    <p>《葬送的芙莉莲》是山田钟人原作、阿部司作画的日本漫画，于2020年开始在《周刊少年Sunday》连载。故事讲述了精灵魔法使芙莉莲与勇者辛美尔、僧侣海塔、战士艾泽一同击败魔王后，各自展开新的人生。</p>
+                    
+                    <h3>主题思想</h3>
+                    <p>与其他同伴不同，拥有千年寿命的芙莉莲对时间的感觉与人类不同。在勇者辛美尔去世后，她开始回顾过去的旅程，重新理解与同伴们度过的十年时光对她而言是多么短暂而珍贵。</p>
+                    
+                    <h3>作品特色</h3>
+                    <p>作品以芙莉莲与人类牧师海塔收养的女孩菲伦一同踏上收集魔法、重新认识人类的旅程为主线，探讨了生命、时间、记忆与情感等深刻主题，被誉为近年来最优秀的治愈系奇幻作品之一。</p>
+                    
+                    <a href="#" class="read-more">了解更多</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 角色介绍 -->
+    <section class="characters-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>主要角色</h2>
+                <p>故事中的关键人物介绍</p>
+            </div>
+            
+            <div class="characters-grid">
+                <div class="character-card">
+                    <div class="character-image">
+                        <img src="../images/img2.png" alt="芙莉莲">
+                    </div>
+                    <div class="character-info">
+                        <h3>芙莉莲</h3>
+                        <p class="character-role">精灵魔法使</p>
+                        <p class="character-desc">拥有千年寿命的精灵，在勇者辛美尔去世后开始重新审视过去旅程的意义。</p>
+                    </div>
+                </div>
+                
+                <div class="character-card">
+                    <div class="character-image">
+                        <img src="../images/img49.jpg" alt="辛美尔">
+                    </div>
+                    <div class="character-info">
+                        <h3>辛美尔</h3>
+                        <p class="character-role">勇者</p>
+                        <p class="character-desc">勇者队伍的领袖，打倒魔王的英雄，对芙莉莲有着特殊的情感。</p>
+                    </div>
+                </div>
+                
+                <div class="character-card">
+                    <div class="character-image">
+                        <img src="../images/img6.png" alt="菲伦">
+                    </div>
+                    <div class="character-info">
+                        <h3>菲伦</h3>
+                        <p class="character-role">魔法使学徒</p>
+                        <p class="character-desc">海塔收养的女孩，与芙莉莲一同踏上新的旅程，跟芙莉莲学习魔法且快速成长。</p>
+                    </div>
+                </div>
+
+                <div class="character-card">
+                    <div class="character-image">
+                        <img src="../images/img14.jpg" alt="休塔尔克">
+                    </div>
+                    <div class="character-info">
+                        <h3>休塔尔克</h3>
+                        <p class="character-role">战士</p>
+                        <p class="character-desc">艾泽的徒弟，是芙莉莲和菲伦一起旅行的战士同伴，胆小却战斗力高</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 网站特色 -->
+    <section class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>网站特色</h2>
+                <p>本毕业设计项目的技术亮点</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature">
+                    <div class="feature-icon"></div>
+                    <h3>响应式设计</h3>
+                    <p>适配各种屏幕尺寸，在手机、平板和电脑上都能完美显示。</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon"></div>
+                    <h3>交互式幻灯片</h3>
+                    <p>自动播放、手动切换的图片轮播，支持触摸和键盘操作。</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon"></div>
+                    <h3>现代布局</h3>
+                    <p>使用Flexbox和Grid布局，代码结构清晰，维护方便。</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon"></div>
+                    <h3>用户体验优化</h3>
+                    <p>平滑的动画效果，直观的导航设计，提升用户访问体验。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>关于本站</h3>
+                    <p>本网站为《葬送的芙莉莲》动漫介绍专题站，是本人毕业设计项目，旨在展示前端开发技能。</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>快速链接</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="characters.html">角色介绍</a></li>
+                        <li><a href="gallery.html">图集欣赏</a></li>
+                        <li><a href="contact.html">联系反馈</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>毕业设计信息</h3>
+                    <p><strong>项目：</strong>动漫介绍网站设计与实现</p>
+                    <p><strong>学生：</strong>喻德霞</p>
+                    <p><strong>导师：</strong>张坤</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 葬送的芙莉莲动漫介绍网站 - 专科毕业设计</p>
+                <p class="disclaimer">注：本网站为学习交流用途，不用于商业目的</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript文件 -->
+    <script src="../js/slideshow.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>
