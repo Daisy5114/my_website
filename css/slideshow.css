@@ -1,0 +1,175 @@
+/* 幻灯片专用样式 */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    background: #000;
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    vertical-align: middle;
+}
+
+/* 幻灯片文本 */
+.text {
+    color: #f2f2f2;
+    font-size: 18px;
+    padding: 20px 16px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    backdrop-filter: blur(5px);
+}
+
+/* 幻灯片编号 */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 14px;
+    padding: 10px 15px;
+    position: absolute;
+    top: 0;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 0 0 10px 0;
+    z-index: 10;
+}
+
+/* 导航按钮 */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* 指示点容器 */
+.dots-container {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+/* 指示点 */
+.dot {
+    cursor: pointer;
+    height: 16px;
+    width: 16px;
+    margin: 0 8px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease, transform 0.3s ease;
+}
+
+.dot:hover {
+    transform: scale(1.2);
+}
+
+.active {
+    background-color: #9b59b6;
+    transform: scale(1.2);
+}
+
+/* 淡入动画 */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: 0.4;}
+    to {opacity: 1;}
+}
+
+/* 响应式设计 */
+@media only screen and (max-width: 1024px) {
+    .mySlides img {
+        height: 450px;
+    }
+    
+    .text {
+        font-size: 16px;
+        padding: 16px 12px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .mySlides img {
+        height: 400px;
+    }
+    
+    .text {
+        font-size: 15px;
+        padding: 14px 10px;
+    }
+    
+    .prev, .next {
+        font-size: 18px;
+        padding: 14px;
+        margin-top: -25px;
+    }
+    
+    .dot {
+        height: 14px;
+        width: 14px;
+        margin: 0 6px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .mySlides img {
+        height: 300px;
+    }
+    
+    .text {
+        font-size: 14px;
+        padding: 12px 8px;
+    }
+    
+    .prev, .next {
+        font-size: 16px;
+        padding: 12px;
+        margin-top: -22px;
+    }
+    
+    .numbertext {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+    
+    .dot {
+        height: 12px;
+        width: 12px;
+        margin: 0 4px;
+    }
+}

@@ -1,0 +1,569 @@
+/* 联系页面专用样式 */
+
+/* 页面标题区域 */
+.page-header {
+    padding: 60px 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+}
+
+.page-title h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.page-title p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* 联系反馈主内容 */
+.contact-main {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.contact-section {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 50px;
+    margin-bottom: 60px;
+}
+
+/* 联系信息部分 */
+.contact-info h2,
+.contact-form-container h2 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.contact-subtitle,
+.form-subtitle {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.contact-details {
+    margin-bottom: 40px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #eee;
+}
+
+.contact-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.contact-icon {
+    font-size: 1.8rem;
+    margin-right: 20px;
+    color: #9b59b6;
+}
+
+.contact-text h3 {
+    font-size: 1.2rem;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.contact-text p {
+    color: #7f8c8d;
+    margin-bottom: 3px;
+    font-size: 0.95rem;
+}
+
+.contact-image {
+    margin: 40px 0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.contact-image img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.contact-image:hover img {
+    transform: scale(1.03);
+}
+
+.image-caption {
+    padding: 12px;
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.opening-hours {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.opening-hours h3 {
+    font-size: 1.3rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #f1f1f1;
+}
+
+.hours-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.day-time {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px dashed #eee;
+}
+
+.day-time:last-child {
+    border-bottom: none;
+}
+
+.day {
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+.time {
+    color: #9b59b6;
+    font-weight: 600;
+}
+
+/* 联系表单部分 */
+.contact-form-container {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #2c3e50;
+    font-size: 1rem;
+}
+
+.form-group label strong {
+    font-weight: 600;
+}
+
+.form-hint {
+    font-size: 0.85rem;
+    color: #7f8c8d;
+    margin-top: 5px;
+    opacity: 0.8;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 2px solid #e1e5e9;
+    border-radius: 8px;
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size: 1rem;
+    color: #333;
+    background-color: #fcfdfe;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #9b59b6;
+    box-shadow: 0 0 0 3px rgba(155, 89, 182, 0.1);
+}
+
+select {
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%237f8c8d' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    background-size: 16px;
+    padding-right: 40px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+    line-height: 1.6;
+}
+
+/* 单选按钮组 */
+.radio-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.radio-option:hover {
+    background-color: #edf2f7;
+}
+
+.radio-option input[type="radio"] {
+    margin-right: 10px;
+    accent-color: #9b59b6;
+}
+
+.radio-label {
+    color: #2c3e50;
+    font-size: 0.95rem;
+}
+
+/* 复选框 */
+.checkbox-option {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px 0;
+}
+
+.checkbox-option input[type="checkbox"] {
+    margin-right: 10px;
+    accent-color: #9b59b6;
+    width: 18px;
+    height: 18px;
+}
+
+.checkbox-label {
+    color: #2c3e50;
+    font-size: 0.95rem;
+}
+
+/* 提交按钮 */
+.submit-btn {
+    width: 100%;
+    padding: 16px;
+    background: linear-gradient(to right, #3498db, #9b59b6);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 7px 20px rgba(155, 89, 182, 0.3);
+}
+
+.submit-btn:active {
+    transform: translateY(-1px);
+}
+
+.btn-icon {
+    font-size: 1.2rem;
+}
+
+.form-notice {
+    margin-top: 25px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+}
+
+.form-notice p {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* 成功消息 */
+.form-success {
+    text-align: center;
+    padding: 50px 30px;
+    background-color: #f8fff8;
+    border-radius: 10px;
+    border: 2px solid #2ecc71;
+    margin-top: 30px;
+}
+
+.success-icon {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    color: #2ecc71;
+}
+
+.form-success h3 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.form-success p {
+    color: #7f8c8d;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.back-btn {
+    padding: 12px 30px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+    background-color: #2980b9;
+}
+
+/* 地图部分 */
+.map-section {
+    margin: 60px 0;
+}
+
+.map-section h2 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.map-container {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.map-placeholder {
+    height: 400px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.map-overlay {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 500px;
+}
+
+.map-overlay h3 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.map-overlay p {
+    color: #7f8c8d;
+    margin-bottom: 20px;
+}
+
+.map-legend {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.legend-color {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+/* FAQ部分 */
+.faq-section {
+    margin-top: 60px;
+}
+
+.faq-section h2 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.faq-item {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.faq-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.faq-question {
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #eee;
+}
+
+.faq-icon {
+    font-size: 1.5rem;
+    margin-right: 15px;
+    color: #9b59b6;
+}
+
+.faq-question h3 {
+    font-size: 1.2rem;
+    color: #2c3e50;
+    margin: 0;
+}
+
+.faq-answer {
+    padding: 25px;
+}
+
+.faq-answer p {
+    color: #7f8c8d;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* 响应式设计 */
+@media screen and (max-width: 1024px) {
+    .contact-section {
+        gap: 40px;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .page-title h1 {
+        font-size: 2.2rem;
+    }
+    
+    .page-title p {
+        font-size: 1rem;
+    }
+    
+    .contact-section {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+    
+    .contact-form-container {
+        padding: 30px;
+    }
+    
+    .map-placeholder {
+        height: 300px;
+    }
+    
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .page-title h1 {
+        font-size: 1.8rem;
+    }
+    
+    .contact-info h2,
+    .contact-form-container h2,
+    .map-section h2,
+    .faq-section h2 {
+        font-size: 1.6rem;
+    }
+    
+    .contact-form-container {
+        padding: 20px;
+    }
+    
+    .radio-group {
+        grid-template-columns: 1fr;
+    }
+    
+    .map-overlay {
+        padding: 20px;
+        margin: 0 15px;
+    }
+    
+    .faq-question,
+    .faq-answer {
+        padding: 20px;
+    }
+}

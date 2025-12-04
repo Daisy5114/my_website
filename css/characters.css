@@ -1,0 +1,460 @@
+/* 角色页面专用样式 */
+
+/* 页面标题区域 */
+.page-header {
+    padding: 60px 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+}
+
+.page-title h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.page-title p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* 角色介绍主内容 */
+.characters-main {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+/* 章节通用样式 */
+.section-intro {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-intro h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    position: relative;
+    display: inline-block;
+}
+
+.section-intro h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(to right, #3498db, #9b59b6);
+    border-radius: 2px;
+}
+
+.section-intro p {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    max-width: 600px;
+    margin: 20px auto 0;
+}
+
+/* 主要角色介绍 - 仿照图片布局 */
+.portfolio-section {
+    margin-bottom: 80px;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+}
+
+.portfolio-item {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.portfolio-image {
+    height: 300px;
+    overflow: hidden;
+}
+
+.portfolio-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.portfolio-item:hover .portfolio-image img {
+    transform: scale(1.05);
+}
+
+.portfolio-content {
+    padding: 30px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio-content h3 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 8px;
+}
+
+.character-subtitle {
+    color: #9b59b6;
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.character-description {
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.character-details {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: auto;
+}
+
+.detail-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px dashed #e1e5e9;
+}
+
+.detail-item:last-child {
+    border-bottom: none;
+}
+
+.detail-label {
+    color: #7f8c8d;
+    font-weight: 500;
+}
+
+.detail-value {
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+/* 次要角色介绍 */
+.secondary-characters {
+    margin-bottom: 80px;
+}
+
+.secondary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.secondary-item {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.secondary-item:hover {
+    transform: translateY(-5px);
+}
+
+.secondary-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.secondary-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.secondary-content {
+    padding: 25px;
+}
+
+.secondary-content h3 {
+    font-size: 1.4rem;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.secondary-content .role {
+    color: #3498db;
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+}
+
+.secondary-content .description {
+    color: #7f8c8d;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* 角色关系图 */
+.relationship-section {
+    margin-bottom: 80px;
+}
+
+.relationship-chart {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chart-node {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    text-align: center;
+    min-width: 150px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    position: relative;
+}
+
+.main-node {
+    background: linear-gradient(135deg, #3498db 0%, #2ecc71 100%);
+    margin-bottom: 60px;
+}
+
+.node-content h4 {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+}
+
+.node-content p {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    margin: 0;
+}
+
+.chart-nodes {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.connection-line {
+    position: absolute;
+    background: #e1e5e9;
+    height: 2px;
+    width: 80px;
+    z-index: 1;
+}
+
+.connection-line:nth-child(1) {
+    top: 50%;
+    left: 25%;
+    transform: rotate(45deg);
+}
+
+.connection-line:nth-child(2) {
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.connection-line:nth-child(3) {
+    top: 50%;
+    right: 25%;
+    transform: rotate(-45deg);
+}
+
+/* 角色数据统计 */
+.stats-section {
+    margin-bottom: 60px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+.stat-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #9b59b6;
+    margin-bottom: 10px;
+}
+
+.stat-title {
+    font-size: 1.2rem;
+    color: #2c3e50;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.stat-desc {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+}
+
+/* 响应式设计 */
+@media screen and (max-width: 1024px) {
+    .portfolio-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .page-title h1 {
+        font-size: 2.2rem;
+    }
+    
+    .page-title p {
+        font-size: 1rem;
+    }
+    
+    .section-intro h2 {
+        font-size: 2rem;
+    }
+    
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .portfolio-image {
+        height: 250px;
+    }
+    
+    .portfolio-content {
+        padding: 25px;
+    }
+    
+    .secondary-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    
+    .relationship-chart {
+        padding: 30px 20px;
+    }
+    
+    .chart-nodes {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .connection-line {
+        display: none;
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .page-title h1 {
+        font-size: 1.8rem;
+    }
+    
+    .section-intro h2 {
+        font-size: 1.6rem;
+    }
+    
+    .portfolio-image {
+        height: 200px;
+    }
+    
+    .portfolio-content h3 {
+        font-size: 1.5rem;
+    }
+    
+    .secondary-content {
+        padding: 20px;
+    }
+    
+    .chart-node {
+        padding: 15px 20px;
+        min-width: 120px;
+    }
+    
+    .node-content h4 {
+        font-size: 1.1rem;
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .stat-number {
+        font-size: 2.5rem;
+    }
+}
+
+/* 打印样式 */
+@media print {
+    .page-header {
+        background: none;
+        color: black;
+        padding: 30px 0;
+    }
+    
+    .portfolio-item {
+        box-shadow: none;
+        border: 1px solid #ddd;
+        break-inside: avoid;
+    }
+    
+    .relationship-chart {
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+    
+    .stat-card {
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+}
